@@ -1,0 +1,60 @@
+/* ページ全体：クリーム色の背景と、落ち着いた茶色の文字 */
+body {
+    margin: 0;
+    padding: 80px 24px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f7f0e5;
+    color: #463329;
+    font-family: "Yu Gothic", "Meiryo", sans-serif;
+    line-height: 1.8;
+}
+
+/* 店名：少し大きな明朝体で、カフェらしい雰囲気に */
+h1 {
+    margin: 0 0 20px;
+    font-size: clamp(36px, 8vw, 50px);
+    font-family: Georgia, "Yu Mincho", serif;
+    letter-spacing: 0.04em;
+    line-height: 1.3;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+/* ボタン：コーヒー色、丸い角、押しやすい余白 */
+button {
+    margin-top: 16px;
+    padding: 14px 28px;
+    border: 1px solid #684631;
+    border-radius: 28px;
+    background-color: #684631;
+    color: #fffaf2;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(70, 51, 41, 0.15);
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    background-color: #503423;
+    box-shadow: 0 6px 14px rgba(70, 51, 41, 0.2);
+}
+
+/* キーボード操作でも、選択中のボタンが分かるように */
+button:focus-visible {
+    outline: 3px solid #946b45;
+    outline-offset: 4px;
+}
+
+/* おすすめメニューの表示位置を確保 */
+#menu {
+    min-height: 1.8em;
+    margin-top: 28px;
+    color: #684631;
+    font-weight: bold;
+}
