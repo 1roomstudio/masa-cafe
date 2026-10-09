@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: masa-cafe
+    runtime: python
+    plan: free
+    autoDeployTrigger: off
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --config gunicorn.conf.py server:app
+    healthCheckPath: /

@@ -1,2 +1,12 @@
 cafe.db
 preview-*.png
+# Pythonの一時ファイル・ローカル環境・秘密情報
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+*.db-journal
+*.db-wal
+*.db-shm
