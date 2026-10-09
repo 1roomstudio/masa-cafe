@@ -2,7 +2,7 @@
 import os
 
 bind = f"0.0.0.0:{os.environ.get('PORT', '10000')}"
-# 小規模なSQLiteアプリ用。DBへの同時書き込みを抑えます。
+# 小規模アプリ用。SQLite・PostgreSQL共通の構成です。
 workers = 1
 threads = 2
 accesslog = "-"
